@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Vite App</title>
+</head>
+
+<body class="p-4">
+	<h1>ENTER VALUE</h1>
+	<input id="number-value" placeholder="Enter the number." class="border-2 border-black p-2 rounded-md">
+  
+  <h1 class="mt-8">CONVERT FROM</h1>
+  <select id="current-unit" class="border-2 border-black p-2 rounded-md">
+    <option value="m">meter</option>
+    <option value="cm">centimeter</option>
+    <option value="in">inch</option>
+    <option value="ft">feet</option>
+  </select>
+
+  <h1 class="mt-8">CONVERT TO</h1>
+   <select id="new-unit" class="border-2 border-black p-2 rounded-md">
+    <option value="m">meter</option>
+    <option value="cm">centimeter</option>
+    <option value="in">inch</option>
+    <option value="ft">feet</option>
+  </select>
+
+  
+  <div class= "my-8">
+  <button onclick="convertUnit()" class="border-2 bg-indigo-300 border-black p-2 rounded-md">Convert</button>
+  </div>
+
+	<script type="module" src="./main.js"></script>
+  <div id="answer"></div>
+	<script src="./app.js"></script>
+</body>
+
+</html>
